@@ -1,16 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+import React, { Component } from 'react';
+import Vbar from "./Vbar";
+import Hbar from "./Hbar";
+import Bttm from "./Bttm";
+import "./App.css";
 
-import Navigation from './Navigation';
-
-function App() {
+export default class App extends Component {
+render() {
   return (
+    
     <div className="App">
+      <div id="container">
+    
+      <Vbar/>
+      <Hbar/>
+      <Bttm/>
+
+      </div>
+     
+     
     </div>
 
 
 
   );
 }
+}
 
-export default App;
